@@ -3,9 +3,18 @@
  * @author Benoît Puech and Kyle from Web Dev Simplified
  */
 
+import { onSnake, expandSnake } from './snake';
+
 let food = { x: 0, y: 0 };
 
-export const update = () => {};
+const EXPANSION_RATE = 1;
+
+export const update = () => {
+  if (onSnake(food)) {
+    expandSnake(EXPANSION_RATE);
+    food = { x: 20, y: 10 };
+  }
+};
 
 export const draw = (gameBoard) => {
   const foodElement = document.createElement('div');
