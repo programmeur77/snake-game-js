@@ -1,5 +1,6 @@
+import { SNAKE_SPEED } from './snake';
+
 let lastRenderTime = 0;
-const SNAKE_SPEED = 2;
 
 const main = (currentTime) => {
   window.requestAnimationFrame(main);
