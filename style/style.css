@@ -1,0 +1,15 @@
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: black;
+}
+
+#game-board {
+  height: 100vmin;
+  width: 100vmin;
+  background-color: #ccc;
+}
